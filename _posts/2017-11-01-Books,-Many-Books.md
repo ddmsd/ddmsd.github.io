@@ -11,6 +11,8 @@ toc: true
 
 A nice reading list for the career of software developer!
 
+---
+
 > Extracted From [The Software Craftsman: Professionalism, Pragmatism, Pride - 2014 - Sandro Mancuso](https://www.amazon.com/Software-Craftsman-Professionalism-Pragmatism-Robert/dp/0134052501/ref=la_B00O0J11Z0_1_1?s=books&ie=UTF8&qid=1510231349&sr=1-1)
 
 Having our own library, physical or electronic, is essential. We are very lucky to be in an industry where so much information is produced. However, there are many different types of books, and choosing which books to read can be a very difficult task.

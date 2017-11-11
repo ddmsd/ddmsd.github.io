@@ -13,6 +13,7 @@ toc: true
 This post presents several scenarios with high CC and the ways to decrease 
 it in Python.
 
+---
 
 Here's a short introduction about how the cyclomatic complexity (CC) in computed: [Introduction to Code Metrics](http://radon.readthedocs.io/en/latest/intro.html)
 
@@ -111,6 +112,23 @@ if value_b == "b" and value_c == "d":
 if value_c != "c":
     action_c()
 ```
-This is really bad. The work flow is hard to follow. It is difficult to figure out which case will land where. You'd better refactor the code with [single responsibility principle](http://www.oodesign.com/single-responsibility-principle.html). Be nice and thoughtful to people who will read and maintain your code later. 
+This is really bad. The work flow is hard to follow. 
+It is difficult to figure out which case will land where. 
+It's better refactor the code with [single responsibility principle](http://www.oodesign.com/single-responsibility-principle.html).
 
+Unluckily this type of code is not so rare when people are in a hurry to finish some change 
+before deadline. Nothing can be easier than to add an `if` in front of everything so his 
+feature will be guaranteed to work. 
+
+If you have ever done this, just be nice and thoughtful to people who will read and maintain your code later. 
 Imagine one day you are asked to add a feature to this code. Will you enjoy working on it ?
+
+## Checking tools
+
+For Python, [radon](http://radon.readthedocs.io/en/latest/commandline.html) is a useful tool to check the CC level.
+Generally, it is recommended to keep the CC of each function under 6.
+You can check if you have any function above this threshold with
+```bash
+radon cc . --min B -s
+```
+It also can be part of automatic checks after each commit.
