@@ -15,7 +15,8 @@ it in Python.
 
 ---
 
-Here's a short introduction about how the cyclomatic complexity (CC) in computed: [Introduction to Code Metrics](http://radon.readthedocs.io/en/latest/intro.html)
+Here's a short introduction about how the cyclomatic complexity (CC) in computed: 
+[Introduction to Code Metrics](http://radon.readthedocs.io/en/latest/intro.html){: .btn .btn--info}
 
 Keeping low CC is important for other developers to understand and maintain your code. Generally, we try to write short functions with single responsibility to avoid high CC. The following scenarios describe functions with high CC and the ways to decrease the complexity.
 
