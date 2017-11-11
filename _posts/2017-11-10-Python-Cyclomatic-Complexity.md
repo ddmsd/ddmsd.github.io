@@ -19,10 +19,11 @@ Here's a short introduction about how the cyclomatic complexity (CC) in computed
 Keeping low CC is important for other developers to understand and maintain your code. Generally, we try to write short functions with single responsibility to avoid high CC. The following scenarios describe functions with high CC and the ways to decrease the complexity.
 
 
-## Homogeneous `if ... elif ... else`
+## Homogeneous `if`
 
 ### `switch`
-As there's no `switch ... case ...` in Python as in other languages, you might want to implement similar code by using many `if ... else ...` statements. This can make the code heavy. Here is an example
+As there's no `switch ... case ...` in Python as in other languages, 
+you might want to implement similar code by using many `if ... elif ... else ...` statements. This can make the code heavy. Here is an example
 ```python
 if value == "a":
     action_a()
@@ -83,11 +84,11 @@ class ActionC(Action):
 action = Action.from_value(value)
 action()
 ```
-The above code is equivalent with the two previous ones. There's a variation I 
+The above code is equivalent to the previous ones. There's a variation I 
 implemented some time ago in 
 [abstract_factory.py](https://github.com/faif/python-patterns/blob/master/creational/abstract_factory.py).
 It can be cleaner by setting `__call__` as abstract, which makes the intention 
-of the parent class more clear for other developers.
+of the parent class more clear to other developers.
 
 Although I think the third option may look fancy, I would prefer to start the development
 with the first implementation for a simple case. Then we advance to the second one when there
