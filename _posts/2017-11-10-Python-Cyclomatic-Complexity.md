@@ -84,13 +84,17 @@ class ActionC(Action):
 action = Action.from_value(value)
 action()
 ```
-The above code is equivalent to the previous ones. There's a variation I 
-implemented some time ago in 
+The above code is equivalent to the previous ones, 
+but it uncouples the different actions. With this structure, you can add or
+delete one action without modifying any others.
+Every child action behaves like a plugin here. 
+
+There's a variation I wrote some time ago in 
 [abstract_factory.py](https://github.com/faif/python-patterns/blob/master/creational/abstract_factory.py).
 It can be cleaner by setting `__call__` as abstract, which makes the intention 
 of the parent class more clear to other developers.
 
-Although I think the third option may look fancy, I would prefer to start the development
+Although I think the third option may look fancier, I would prefer to start the development
 with the first implementation for a simple case. Then we advance to the second one when there
 are too many `if`. Finally when it is needed, we can refactor the code into the third pattern.
 
