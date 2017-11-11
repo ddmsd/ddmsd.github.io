@@ -10,7 +10,7 @@ tags:
 toc: true
 ---
 
-The post presents several scenarios with high CC and the ways to decrease 
+This post presents several scenarios with high CC and the ways to decrease 
 it in Python.
 
 
@@ -86,8 +86,8 @@ action()
 The above code is equivalent with the two previous ones. There's a variation I 
 implemented some time ago in 
 [abstract_factory.py](https://github.com/faif/python-patterns/blob/master/creational/abstract_factory.py).
-It can be cleaner by setting `__call__` as abstract, which makes it clear for other 
-developers the intention of the parent class.
+It can be cleaner by setting `__call__` as abstract, which makes the intention 
+of the parent class more clear for other developers.
 
 Although I think the third option may look fancy, I would prefer to start the development
 with the first implementation for a simple case. Then we advance to the second one when there
