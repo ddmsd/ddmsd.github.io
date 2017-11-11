@@ -6,6 +6,7 @@ tags:
   - reading
   - inspiration
   - CS
+toc: true
 ---
 
 A nice reading list for the career of software developer!
