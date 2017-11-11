@@ -1,3 +1,12 @@
+---
+title: "Books, Many Books"
+categories:
+  - technical
+tags:
+  - reading
+  - inspiration
+  - CS
+---
 
 > Extracted From [The Software Craftsman: Professionalism, Pragmatism, Pride - 2014 - Sandro Mancuso](https://www.amazon.com/Software-Craftsman-Professionalism-Pragmatism-Robert/dp/0134052501/ref=la_B00O0J11Z0_1_1?s=books&ie=UTF8&qid=1510231349&sr=1-1)
 
