@@ -9,13 +9,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Droplet"
 title_separator          : "-"
 name                     : "Alice"
 description              : "Notes and thinking."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "fcalice/fcalice.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -84,7 +84,7 @@ analytics:
 # Site Author
 author:
   name             : "Alice"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://avatars3.githubusercontent.com/u/32176825?s=460&v=4"
   bio              : "I am an amazing person."
   location         : "Paris, France"
   email            : "rainingilove@gmail.com"
