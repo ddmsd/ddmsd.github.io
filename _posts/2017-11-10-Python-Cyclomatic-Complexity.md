@@ -36,6 +36,8 @@ elif value == "c":
 else:
     action_default()
 ```
+This code works. But if you submit it in a large team, this code can be fragile. Other developers might add some inner logic or operations inside each `if`.
+This will make it *inhomogeneous* as described in the next section and difficult to refactor later.
 
 ### Dictionary Mapping
 A clean way for this situation is to create a mapping dictionary. In Python, functions are also object. So the code above can be written as this
