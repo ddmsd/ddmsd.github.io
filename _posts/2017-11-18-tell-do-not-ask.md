@@ -5,7 +5,6 @@ categories:
 tags:
   - coding
   - OOP design
-toc: true
 ---
 
 
