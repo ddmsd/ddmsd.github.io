@@ -12,7 +12,7 @@ The central focus of **Asyncio** is to perform multiple concurrent tasks that in
 ## Threading vs Asynchronous
 Due to the GIL(Global Interpreter Lock) in Python, only one thread is executed at any time, there is no multi-core parallel processing for both multi-threading and asynchronous programming. However, we can still scale up the I/O blocking tasks with the two programming styles.
 
-For multi-threading programming, each thread is instantiated for one task. While one thread enters into the waiting phase, it is released and another thread starts to run. While for asynchronous programming, only one thread runs all the time, every time it starts to wait, it switch to the next task. In the latter case, you have one thread that *loops* over all different tasks.
+For multi-threading programming, each thread is instantiated for one task. While one thread enters into the waiting phase, it is released and another thread starts to run. While for asynchronous programming, only one thread runs all the time, every time it starts to wait, it switch to the next task. In the latter case, you have one thread that *loops* over all different tasks. So simply an *event loop* executes a collection of tasks.
 
 The synchronization of different threads is one of the main difficulties in multi-threading programming. This is where the collision happens among different threads. With asynchronous programming, we can work around this by switching the tasks explicitly with Python *coroutine*. This is much safer.
 
