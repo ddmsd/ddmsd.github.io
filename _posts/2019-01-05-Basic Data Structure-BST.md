@@ -20,7 +20,7 @@ As the min and max keys of a BST are respectively the leftmost leaf and the righ
 To iterate through all the elements of a BST in sorted order, we just need to do an _inorder_ traversal of the binary tree itself. As each element is processed once, this operation takes time $O(n)$.
 
 ## How to use BST
-In practice, a BST can be used as a sorted hash table where the lookup takes time $O(\log n)$ for a library implementation. In python, the package [bintrees](https://pypi.org/project/bintrees/) provides Binary RedBlack- and AVL-Trees. Another package [sortedcontainers](http://www.grantjenks.com/docs/sortedcontainers/) implements the sorted data structure as a sorted list of sorted lists where the insertion and deletion takes time $O(\sqrt n)$ asymptotically.
+In practice, a BST can be used as a sorted hash table where the lookup takes time $O(\log n)$ for a library implementation. In python, the package [bintrees](https://pypi.org/project/bintrees/) provides Binary Red-Black and AVL-Trees. Another package [sortedcontainers](http://www.grantjenks.com/docs/sortedcontainers/) implements the sorted data structure as a sorted list of sorted lists where the insertion and deletion takes time $O(\sqrt n)$ asymptotically.
 
 
 # B-tree
@@ -28,4 +28,10 @@ A B-tree is a generalization of BST in that a node can have more than two childr
 
 If a node of B-tree has `n` sorted keys, then it has `n + 1` children, the `i-th` key of the node serves as the separation point of the children `i` and `i + 1`.
 
-![B-tree](./img/640px-B-tree.svg.png)
+{% capture fig_img %}
+![b-tree]({{ "/assets/images/B-tree.svg" }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+</figure>

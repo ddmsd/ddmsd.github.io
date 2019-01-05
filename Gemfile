@@ -17,13 +17,12 @@ gem "jekyll", "~> 3.5"
 # gem "minimal-mistakes-jekyll"
 
 # The following plugins are automatically loaded by the theme-gem:
-gem "jekyll-paginate"
-gem "jekyll-sitemap"
+gem 'github-pages', group: :jekyll_plugins
 gem "jekyll-gist"
-gem "jekyll-feed"
 gem "jemoji"
 gem "jekyll-data"
 #
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
+    gem "jekyll-include-cache"
 end
