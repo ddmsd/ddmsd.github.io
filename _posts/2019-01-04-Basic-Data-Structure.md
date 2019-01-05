@@ -23,7 +23,7 @@ Python tuples are static and immutable arrays that cannot be modified.
 
 A tuple uses fewer resources as it does not need extra headrooms for resizing, for the same number of elements, a tuple takes the exact number of elements worth of memory while a list need more memory for headrooms. A list always takes larger memory than a tuple with the same data.
 
-Another advantage of tuple is that for tuples of small size, the memory they use are not garbage collected in the background by Python. This make it fast to create tuples of small size since they can avoid communication with the operating system.
+Another advantage of tuple is that for tuples of small size, the memory they use are not garbage collected in the background by Python. This makes it fast to create tuples of small size since they can avoid communication with the operating system.
 
 **Note:** As __memory allocation is not cheap__, reusing space that has already been allocated can give performance speedup. For the same reason, it is also expensive to frequently resize a list with append operation, if append can not be avoided, it is better to use [collections.deque](https://docs.python.org/3.7/library/collections.html#collections.deque). The latter supports approximately O(1) performance for append and pop in either direction.
 {: .notice--info}
