@@ -6,6 +6,7 @@ tags:
   - programming
   - algorithm
   - Python
+toc: true
 ---
 
 # Array
@@ -24,8 +25,8 @@ A tuple uses fewer resources as it does not need extra headrooms for resizing, f
 
 Another advantage of tuple is that for tuples of small size, the memory they use are not garbage collected in the background by Python. This make it fast to create tuples of small size since they can avoid communication with the operating system.
 
-As __memory allocation is not cheap__, reusing space that has already been allocated can give performance speedup. For the same reason, it is also expensive to frequently resize a list with append operation, if append can not be avoided, it is better to use [collections.deque](https://docs.python.org/3.7/library/collections.html#collections.deque). The latter supports approximately O(1) performance for append and pop in either direction.
-
+**Note:** As __memory allocation is not cheap__, reusing space that has already been allocated can give performance speedup. For the same reason, it is also expensive to frequently resize a list with append operation, if append can not be avoided, it is better to use [collections.deque](https://docs.python.org/3.7/library/collections.html#collections.deque). The latter supports approximately O(1) performance for append and pop in either direction.
+{: .notice--info}
 
 # Linked List
 A _single linked list_ is a data structure that contains a sequence of nodes such that each node contain an object and a reference to the next node in the list.

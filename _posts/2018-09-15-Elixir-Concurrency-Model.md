@@ -6,6 +6,7 @@ tags:
   - functional programming
   - elixir
   - concurrency
+toc: true
 ---
 ## Process
 
