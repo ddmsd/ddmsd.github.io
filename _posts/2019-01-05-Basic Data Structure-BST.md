@@ -28,4 +28,4 @@ A B-tree is a generalization of BST in that a node can have more than two childr
 
 If a node of B-tree has `n` sorted keys, then it has `n + 1` children, the `i-th` key of the node serves as the separation point of the children `i` and `i + 1`.
 
-![B-tree](./img/B-tree.svg)
+![B-tree](./img/640px-B-tree.svg.png)
