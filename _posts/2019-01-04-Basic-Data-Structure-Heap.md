@@ -21,12 +21,12 @@ For a heap of height $h$, it can be implemented with an array of $2^h - 1$ eleme
 The implementation of heap in Python is [heapq](https://docs.python.org/3.7/library/heapq.html?highlight=heapq#module-heapq), it only provides min-heap functionality.
 
 ## Insertion
-When inserting a new element in a heap of size n, the new element is placed at the left-most open spot in the heap array. We then _bubble up_ the new element by comparing its key with the key of its parent till it arrives at an appropriate position. The time complexity of the insertion is O(log n).
+When inserting a new element in a heap of size n, the new element is placed at the left-most open spot in the heap array. We then _bubble up_ the new element by comparing its key with the key of its parent till it arrives at an appropriate position. The time complexity of the insertion is $O(\log n)$.
 
 ## Extract the min
-The min of a heap `h` is the element `h[0]`, `h[0]` returns the min key of the heap without popping it. To extract the min, we can use `heapq.heappop(h)`. As this operation leaves the position 0 empty, we can fill it by moving the `(n - 1)th` element to position 0. After that, the dissatisfied element is _bubbled down_ by swapping the root with the min child recursively till the root is less or equal than both children. The extract min operation also has the time complexity O($\log n$).
+The min of a heap `h` is the element `h[0]`, `h[0]` returns the min key of the heap without popping it. To extract the min, we can use `heapq.heappop(h)`. As this operation leaves the position 0 empty, we can fill it by moving the `(n - 1)th` element to position 0. After that, the dissatisfied element is _bubbled down_ by swapping the root with the min child recursively till the root is less or equal than both children. The extract min operation also has the time complexity $O(\log n)$.
 
 ## Sort
-A *heapsort* is a sorting algorithm. We first construct a heap by inserting the new element into the heap one by one, next we extract the min element from the heap till it's empty. It runs in worst case O($n\log n$) and is an inplace sort.
+A *heapsort* is a sorting algorithm. We first construct a heap by inserting the new element into the heap one by one, next we extract the min element from the heap till it's empty. It runs in worst case $O(n\log n)$ and is an inplace sort.
 
-Another advantage of heapsort is that you can efficiently insert new elements into the heap during the sort, provided that the newly inserted element is greater or equal than the last extracted min key. This is useful for task schedulers in operating systems for example.
+Another advantage of heapsort is that you can efficiently insert new elements into the heap during the sort, provided that the newly inserted element is greater than or equal to the last extracted min key. This is useful for task schedulers in operating systems for example.
