@@ -41,7 +41,15 @@ If a node of B-tree has `n` sorted keys, then it has `n + 1` children, the `i-th
 </figure>
 
 ## Secondary Storage
-The **main memory** of a computer system normally consists of silicon memory chips, and the **secondary storage** are usually based on magnetic disk. The basic geometry of a modern disk is a **platter** together with a **spindle** that spins at a constant rate, the typical rate for a modern disk in the 7200 **rotations per minute (RPM)** to 15 000 RPM range. For example, for a drive that rotates at 7200 RPM, the time that a single rotation takes is 8.33 ms.
+The **main memory** of a computer system normally consists of silicon memory chips, and the **secondary storage** are usually based on magnetic disk. The basic geometry of a modern disk is a **platter** together with a **spindle/motor** that drives the platter to spin at a constant rate, the typical rate for a modern disk in the 7200 **rotations per minute (RPM)** to 15 000 RPM range. For example, for a drive that rotates at 7200 RPM, the time that a single rotation takes is 8.33 ms.
+
+{% capture fig_hd %}
+![hard-drive]({{ "/assets/images/hard-drive.png" }})
+{% endcapture %}
+
+<figure>
+  {{ fig_hd | markdownify | remove: "<p>" | remove: "</p>" }}
+</figure>
 
 To read and write from the platter surface, we need a **disk head** connected to a **disk arm** to sense the magnetic pattern (read) or to induce a change (write) in it. As a typical disk I/O time is the sum of three components
 
