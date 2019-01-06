@@ -14,7 +14,7 @@ use_math: true
 Heaps are a simple data structure that supports priority queue operations like _insert_ and _extract_min_. They work by maintaining the partial order on a set of elements that are weaker than the sorted order. Heaps are usually implemented as a _complete binary tree_ that for each node, its key is less or equal than the keys of its children.
 
 **Definition.** A complete binary tree is a binary tree in which every level, except the last, is completely filled. For the last level, all the nodes are as far left as possible.
-{: .notice--primary}
+{: .notice--info}
 
 For a heap of height $h$, it can be implemented with an array of $2^h - 1$ elements. Suppose that the first element's index is `1`, for a node at the position `i`, its left and right children are respectively `2 * i` and `2 * i + 1`, and its parent is `i // 2`. Therefore for a heap `h`, we have `h[i] <= h[2 * i + 1] and h[i] <= h[2 * i + 2]`, where the first index is 0 in most programming languages.
 
