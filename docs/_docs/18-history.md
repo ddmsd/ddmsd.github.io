@@ -4,9 +4,20 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-01-16T11:06:09-05:00
+last_modified_at: 2019-01-23T20:20:42-05:00
 toc: true
 ---
+
+## Unreleased
+
+### Enhancements
+
+- Add Malayalam localized UI text strings. [#2037](https://github.com/mmistakes/minimal-mistakes/pull/2037)
+
+### Bug Fixes
+
+- Fix `site.logo` false positives. [#2026](https://github.com/mmistakes/minimal-mistakes/pull/2026#issuecomment-455770730)
+- Add empty `alt` attribute to `site.logo` image. [#2035](https://github.com/mmistakes/minimal-mistakes/pull/2035)
 
 ## [4.15.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.15.1)
 
