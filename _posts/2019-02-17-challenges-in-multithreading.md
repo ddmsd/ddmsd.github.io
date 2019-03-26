@@ -1,7 +1,7 @@
 ---
 title: "Challenges in multi-threaded programs"
 categories:          
-  - technical
+  - baseball
 tags:
   - programming
 toc: true
